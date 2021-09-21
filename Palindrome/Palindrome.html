@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    
+<script>
+
+    function palindromeFun() {
+        const arrValue = userInput.split('');
+        const arrReverse = arrValue.reverse();
+        const arrReverseJoin = arrReverse.join('');
+
+        if(arrReverseJoin == userInput){
+            alert('It is a palindrome string');
+        }else{
+            alert('it is not a palindrome string');
+        }
+    }
+
+
+
+
+
+
+
+    const userInput = prompt('Enter the string to check palindrome');
+    const output = palindromeFun(userInput);
+    console.log(output);
+</script>
+
+</body>
+</html>
